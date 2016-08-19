@@ -12,6 +12,8 @@ Router.map(function() {
   this.route('question', {path: '/question/:question_id'});
   this.route('signup');
   this.route('login');
+  this.route('logout');
+  this.route('signout', {path: '/signout/:user_id'});
 });
 
 export default Router;

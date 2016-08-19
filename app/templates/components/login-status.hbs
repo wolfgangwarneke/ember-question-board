@@ -1,0 +1,4 @@
+Logged in as: {{sessionUser.username}}
+{{#if sessionUser}}
+{{#link-to 'signout' sessionUser.id}}Sign out{{/link-to}}
+{{/if}}

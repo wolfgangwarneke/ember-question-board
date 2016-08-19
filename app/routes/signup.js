@@ -6,7 +6,8 @@ export default Ember.Route.extend({
       var params = {
         username: this.controller.get('username'),
         firstname: this.controller.get('firstname'),
-        lastname: this.controller.get('lastname')
+        lastname: this.controller.get('lastname'),
+        active: false
       };
       var newUser = this.store.createRecord('user', params);
       newUser.save();
