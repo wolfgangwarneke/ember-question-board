@@ -1,14 +1,14 @@
 { "questions": [{
     "main": "How can I do this?",
     "additional_notes": "Help!",
-    "date": "2016-08-19T17:15:28.661Z"
+    "timestamp": "2016-08-19T17:15:28.661Z"
   }, {
     "main": "How do you dance?",
     "additional_notes": "Any help appreciated.",
-    "date": "2016-08-18T17:15:28.661Z"
+    "timestamp": "2016-08-18T17:15:28.661Z"
   }, {
     "main": "Is my computer self-aware?",
     "additional_notes": "I really want to know.",
-    "date": "2016-07-19T17:15:28.661Z"
+    "timestamp": "2016-07-19T17:15:28.661Z"
   }]
 }

@@ -8,7 +8,7 @@ export default Ember.Component.extend({
       var params = {
         main: this.get('question'),
         additional_notes: this.get('notes'),
-        date: timestamp,
+        timestamp: timestamp,
       };
       this.sendAction('askQuestion', params);
     }

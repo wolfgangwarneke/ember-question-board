@@ -2,7 +2,7 @@
 
 <ul>
   {{#each model as |question|}}
-    <li>{{question.main}}</li>
+    {{question-tile question=question}}
   {{/each}}
 </ul>
 
