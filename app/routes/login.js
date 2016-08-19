@@ -8,6 +8,7 @@ export default Ember.Route.extend({
     login(model) {
       var loginName = this.controller.get('userlogin');
       var searchedNames = [];
+      var self = this;
       model.forEach(function(user) {
         console.log(user.get('username'));
         searchedNames.push(user.get('username'));
@@ -15,6 +16,7 @@ export default Ember.Route.extend({
           console.log("Login matches");
         } else {
           console.log("User not found");
+          self.transitionTo('signup');
         }
       });
     }
