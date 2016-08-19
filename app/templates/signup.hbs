@@ -1,0 +1,11 @@
+<h2>Join us!</h2>
+
+<form>
+  <label for="username">Username</label><br>
+  {{input value=username id="username"}}<br>
+  <label for="firstname">First name</label><br>
+  {{input value=firstname id="firstname"}}<br>
+  <label for="lastname">lastname</label><br>
+  {{input value=lastname id="lastname"}}<br>
+  <button {{action 'createUser'}}>Sign up!</button>
+</form>
