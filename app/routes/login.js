@@ -16,7 +16,10 @@ export default Ember.Route.extend({
           console.log("Login matches");
         } else {
           console.log("User not found");
-          self.transitionTo('signup');
+          var failureMessage = "You're user name was not found, would you like to sign up?";
+          if (confirm(failureMessage)) {
+            self.transitionTo('signup');
+          }
         }
       });
     }
