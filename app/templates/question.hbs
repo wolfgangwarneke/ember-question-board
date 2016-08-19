@@ -1,4 +1,10 @@
 
-<h2>{{model.main}}</h2>
-<h4>on {{model.timestamp}}</h4>
-<p>{{model.additional_notes}}</p>
+<h2>{{model.question.main}}</h2>
+<h4>on {{model.question.timestamp}}</h4>
+<p>{{model.question.additional_notes}}</p>
+{{new-answer question=model.question answerQuestion="answerQuestion"}}
+<ul>
+{{#each model.question.answers as |answer|}}
+  {{answer-tile answer=answer}}
+{{/each}}
+</ul>
