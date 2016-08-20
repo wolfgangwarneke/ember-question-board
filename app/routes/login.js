@@ -24,6 +24,7 @@ export default Ember.Route.extend({
           user.active = true;
           user.save();
           self.sessionUser = user;
+          self.transitionTo('index');
         } else {
           counter --;
           if (counter === 0 && !flag) {

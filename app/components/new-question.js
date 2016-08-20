@@ -9,6 +9,7 @@ export default Ember.Component.extend({
         main: this.get('question'),
         additional_notes: this.get('notes'),
         timestamp: timestamp,
+        user: this.get('user')
       };
       this.sendAction('askQuestion', params);
     }

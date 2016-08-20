@@ -2,7 +2,12 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model(params) {
-    return this.store.findRecord('question', params.question_id);
+    return Ember.RSVP.hash({
+      user: this.store.query('user', {
+        active: 'true'
+      }),
+      question: this.store.findRecord('question', params.question_id)
+    });
   },
   actions: {
     answerQuestion(params) {

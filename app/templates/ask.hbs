@@ -1,2 +1,6 @@
-<h2>ask page header</h2>
- {{new-question askQuestion="askQuestion"}}
+{{#each model as |user|}}
+  {{#if user.active}}
+    <h2>Any questions, {{user.firstname}}?</h2>
+    {{new-question askQuestion="askQuestion" user=user}}
+  {{/if}}
+{{/each}}
