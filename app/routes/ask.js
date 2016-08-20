@@ -1,7 +1,9 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  model() {
+
+  model(params) {
+    console.log(params.user_id);
     return this.store.findAll('user');
   },
 

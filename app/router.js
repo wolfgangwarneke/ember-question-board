@@ -8,7 +8,7 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('about');
-  this.route('ask');
+  this.route('ask', {path: '/ask/:user_id'});
   this.route('question', {path: '/question/:question_id'});
   this.route('signup');
   this.route('login');

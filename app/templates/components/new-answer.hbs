@@ -1,4 +1,5 @@
 <form>
   {{input value=answer id="answer"}}
+  {{input type="hidden" value=answerUserName id="answerUserName" name="answerUserName"}}
   <button {{action 'answerQuestion'}}>Answer</button>
 </form>

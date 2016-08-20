@@ -1,4 +1,6 @@
 Logged in as: {{sessionUser.username}}
 {{#if sessionUser}}
 {{#link-to 'signout' sessionUser.id}}Sign out{{/link-to}}
+---
+{{#link-to 'ask' sessionUser.id}}Ask a Question{{/link-to}}
 {{/if}}

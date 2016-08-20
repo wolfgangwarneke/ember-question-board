@@ -8,7 +8,8 @@ export default Ember.Component.extend({
       var params = {
         main: this.get('answer'),
         timestamp: timestamp,
-        question: this.get('question')
+        question: this.get('question'),
+        username: this.get('answerUserName')
       };
       this.sendAction('answerQuestion', params);
     }

@@ -6,5 +6,5 @@ export default DS.Model.extend({
   lastname: DS.attr(),
   active: DS.attr(),
   questions: DS.hasMany('question', {async: true}),
-  answers: DS.hasMany('answers', {async: true})
+  answers: DS.hasMany('answer', {async: true})
 });

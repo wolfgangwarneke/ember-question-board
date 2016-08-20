@@ -2,7 +2,11 @@
 <h2>{{model.question.main}}</h2>
 <h4>on {{model.question.timestamp}} by {{model.question.user.username}}</h4>
 <p>{{model.question.additional_notes}}</p>
-{{new-answer question=model.question answerQuestion="answerQuestion"}}
+{{#each model.user as |answerUser|}}
+  {{#if answerUser.active}}
+    {{new-answer question=model.question answerQuestion="answerQuestion" answerUserName=answerUser.username}}
+  {{/if}}
+{{/each}}
 <ul>
 {{#each model.question.answers as |answer|}}
   {{answer-tile answer=answer}}
