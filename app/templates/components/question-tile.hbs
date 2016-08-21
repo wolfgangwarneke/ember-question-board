@@ -1,5 +1,8 @@
 <li>
   {{#link-to 'question' question.id}}
     {{question.main}}
-  {{/link-to}}
+  {{/link-to}} /// asked by {{question.user.username}}
+  {{#if question.user.active}}
+  <button {{action "deleteQuestion" question}}>Remove</button>
+  {{/if}}
 </li>
