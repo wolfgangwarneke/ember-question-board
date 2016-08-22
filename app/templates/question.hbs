@@ -7,7 +7,7 @@
   {{#if model.showEditQuestion}}
     {{input value=model.question.main}}<br>
     {{input value=model.question.additional_notes}}<br>
-    <button {{updateQuestion}}>Save</button><br>
+    <button {{action 'updateQuestion' model.question}}>Save</button><br>
   {{/if}}
 {{/if}}
 {{#each model.user as |answerUser|}}

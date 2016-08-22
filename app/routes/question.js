@@ -24,7 +24,10 @@ export default Ember.Route.extend({
       } else {
         this.controller.set("model.showEditQuestion", true);
       }
+    },
+    updateQuestion(question) {
+      question.save();
+      this.controller.set("model.showEditQuestion", false);
     }
-
   }
 });
