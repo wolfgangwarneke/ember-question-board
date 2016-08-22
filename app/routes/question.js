@@ -4,7 +4,8 @@ export default Ember.Route.extend({
   model(params) {
     return Ember.RSVP.hash({
       user: this.store.findAll('user'),
-      question: this.store.findRecord('question', params.question_id)
+      question: this.store.findRecord('question', params.question_id),
+      showEditQuestion: false
     });
   },
   actions: {
@@ -16,6 +17,14 @@ export default Ember.Route.extend({
         return question.save();
       });
       this.transitionTo('question', params.question.id);
+    },
+    toggleShowEditQuestion(model) {
+      if (model.showEditQuestion) {
+        this.controller.set("model.showEditQuestion", false);
+      } else {
+        this.controller.set("model.showEditQuestion", true);
+      }
     }
+
   }
 });

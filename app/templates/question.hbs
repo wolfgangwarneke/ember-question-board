@@ -2,6 +2,14 @@
 <h2>{{model.question.main}}</h2>
 <h4>asked on {{date-display model.question.timestamp}} by {{model.question.user.username}}</h4>
 <p>{{model.question.additional_notes}}</p>
+{{#if model.question.user.active}}
+  <button {{action 'toggleShowEditQuestion' model}}>Edit question</button><br>
+  {{#if model.showEditQuestion}}
+    {{input value=model.question.main}}<br>
+    {{input value=model.question.additional_notes}}<br>
+    <button {{updateQuestion}}>Save</button><br>
+  {{/if}}
+{{/if}}
 {{#each model.user as |answerUser|}}
   {{#if answerUser.active}}
     {{new-answer question=model.question answerQuestion="answerQuestion" answerUserName=answerUser.username}}
