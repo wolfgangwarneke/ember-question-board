@@ -1,6 +1,6 @@
 
 <h2>{{model.question.main}}</h2>
-<h4>on {{model.question.timestamp}} by {{model.question.user.username}}</h4>
+<h4>asked on {{date-display model.question.timestamp}} by {{model.question.user.username}}</h4>
 <p>{{model.question.additional_notes}}</p>
 {{#each model.user as |answerUser|}}
   {{#if answerUser.active}}
