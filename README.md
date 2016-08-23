@@ -1,53 +1,40 @@
-# Questions
+# _Questions..._
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+#### _It's a question board?  Yeah.  Yes it is, August the 19th, 2016_
 
-## Prerequisites
+#### By _**Wolfgang Warneke**_
 
-You will need the following things properly installed on your computer.
+## Description
 
-* [Git](http://git-scm.com/)
-* [Node.js](http://nodejs.org/) (with NPM)
-* [Bower](http://bower.io/)
-* [Ember CLI](http://ember-cli.com/)
-* [PhantomJS](http://phantomjs.org/)
+_This is my question board built with Ember.  It's pretty cool, but I think I messed up a little bit logically orginizationally..._
 
-## Installation
+## Setup/Installation Requirements
 
-* `git clone <repository-url>` this repository
-* change into the new directory
-* `npm install`
-* `bower install`
+* _Do you have Ember installed on your machine???_
+* _Clone this project._
+* _'npm install'_
+* _'bower install'_
+* _'ember s'_
+* _Go to 'http:localhost:4200' in yer browser of choice!_
 
-## Running / Development
+_Check it out.  At time of writing, all the entries have to do with Led Zeppelin ripping people off.  If desired, check out https://en.wikipedia.org/wiki/List_of_Led_Zeppelin_songs_written_or_inspired_by_others for some "inspiration"._
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+## Known Bugs
 
-### Code Generators
+_Firebase is acting up quite a bit.  User may need to refresh to see actual current state of database._
+_Only one user may be logged in at a time.  This is pretty bad design.  Also the login state is frequently determined by looping through all users in database on template pages.  This is a terrible choice, mixing logic duties, and is also a heavyhanded inefficient approach.  This should be rectified._
 
-Make use of the many generators for code, try `ember help generate` for more details
 
-### Running Tests
+## Support and contact details
 
-* `ember test`
-* `ember test --server`
+_DM me on Instagram.  @wolfgangwarneke_
+_Tweet at me!  @wolfgangwarneke_
+_Or you could call me on the cell phone._
 
-### Building
+## Technologies Used
 
-* `ember build` (development)
-* `ember build --environment production` (production)
+_Ember JS!_
 
-### Deploying
+### License
 
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](http://emberjs.com/)
-* [ember-cli](http://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
+Copyright (c) 2016 **Wolfgang Warneke**
